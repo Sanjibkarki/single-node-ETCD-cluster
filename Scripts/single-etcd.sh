@@ -1,0 +1,11 @@
+etcd \
+  --name node1 \
+  --data-dir ./etcd-data \
+  --listen-client-urls https://127.0.0.1:2379 \
+  --advertise-client-urls https://127.0.0.1:2379 \
+  --initial-cluster node1=https://127.0.0.1:2380 \
+  --initial-cluster-state new \
+  --cert-file=./certs/server.crt \
+  --key-file=./certs/server.key \
+  --client-cert-auth=true \
+  --trusted-ca-file=./certs/ca.crt
