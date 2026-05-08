@@ -25,4 +25,4 @@ openssl x509 -req -in client.csr \
   -CAcreateserial \
   -out client.crt -days 365 -sha256
 
-echo "Done — certs generated in ./certs"
+echo "Done — certs generated in ${REPO_ROOT}/certs"
