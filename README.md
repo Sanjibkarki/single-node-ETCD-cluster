@@ -12,7 +12,7 @@ It includes:
 ```text
 .
 ├── Scripts/
-│   ├── genrate-certs.sh
+│   ├── generate-certs.sh
 │   └── single-etcd.sh
 └── config/
     └── etcd.cnf
@@ -28,8 +28,8 @@ It includes:
 1. Generate certificates:
 
    ```bash
-   chmod +x ./Scripts/genrate-certs.sh
-   ./Scripts/genrate-certs.sh
+   chmod +x ./Scripts/generate-certs.sh
+   ./Scripts/generate-certs.sh
    ```
 
 2. Start etcd with TLS (example):
