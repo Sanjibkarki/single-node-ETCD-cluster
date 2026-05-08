@@ -10,7 +10,7 @@ openssl req -x509 -new -nodes -key ca.key -subj "/CN=etcd-ca" -days 3650 -out ca
 
 # 2. Server cert
 openssl genrsa -out server.key 2048
-openssl req -new -key server.key -out server.csr -config ../configs/etcd.cnf
+openssl req -new -key server.key -out server.csr -config ../config/etcd.cnf
 openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key \
   -CAcreateserial -out server.crt -days 10000 -sha256
 
