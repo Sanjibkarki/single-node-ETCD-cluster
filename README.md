@@ -1,4 +1,4 @@
-# Single Node ETCD Cluster
+# Single Node etcd Cluster
 
 This repository provides a simple local setup for running a **single-node etcd cluster secured with TLS**.
 
